@@ -1,3 +1,8 @@
+//Note For obvious reasons, singleton class would probably
+//not conform to the NSCopying protocol
+//If it needs to — say, to be used as a key in an NSDictionary —
+// override the -copyWithZone: method and have it return self
+
 #import <Foundation/Foundation.h>
 #import "SingltoneOne.h"
 #import "SingletonTwo.h"
